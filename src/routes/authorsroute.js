@@ -2,10 +2,12 @@ const express = require('express');
 const authorsRouter = express.Router();
 const authors = require('../data/authors');
 const authordata = require('../model/AuthorModel');
-//Part #2 Point 6 --> Added database and collections in mongodb
-authordata.insertMany(authors) // Part #2 Point 7 --> Inserted array of objects into collections as documents
+
 //router to render authors page
 authorsRouter.get('/',function(req,res){
+//Part #2 Point 6 --> Added database and collections in mongodb
+// Part #2 Point 7 --> Inserted array of objects into collections as documents
+    authordata.insertMany(authors)
     authordata.find() 
     .then(function (authors) {
 

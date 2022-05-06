@@ -4,9 +4,10 @@ const books = require('../data/books');
 const bookdata = require('../model/BookModel');
 
 
-bookdata.insertMany(books)
+
 //router to render books page
 booksRouter.get('/',function(req,res){
+    bookdata.insertMany(books)
     bookdata.find() 
     .then(function (books) {
 
