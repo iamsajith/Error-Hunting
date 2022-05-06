@@ -1,7 +1,7 @@
 const express = require('express'); //Part #2 Point 1 --> Added node modules & //Part #1 Point 1 --> installed express
 const path = require ('path'); 
 const cors = require('cors');
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 const nav= [
     {

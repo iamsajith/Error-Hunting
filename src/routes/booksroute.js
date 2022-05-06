@@ -7,7 +7,7 @@ const bookdata = require('../model/BookModel');
 
 //router to render books page
 booksRouter.get('/',function(req,res){
-    bookdata.insertMany(books)
+    // bookdata.insertMany(books)
     bookdata.find() 
     .then(function (books) {
 

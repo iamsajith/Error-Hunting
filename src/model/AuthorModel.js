@@ -9,5 +9,4 @@ const AuthorSchema = new Schema({
 });
 
 const authordata = mongoose.model('authordatas',AuthorSchema);
-// authordata.insertMany(authors)
 module.exports = authordata;

@@ -7,7 +7,7 @@ const authordata = require('../model/AuthorModel');
 authorsRouter.get('/',function(req,res){
 //Part #2 Point 6 --> Added database and collections in mongodb
 // Part #2 Point 7 --> Inserted array of objects into collections as documents
-    authordata.insertMany(authors)
+    // authordata.insertMany(authors)
     authordata.find() 
     .then(function (authors) {
 
