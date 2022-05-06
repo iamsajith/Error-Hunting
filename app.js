@@ -1,6 +1,7 @@
 const express = require('express'); //Part #2 Point 1 --> Added node modules & //Part #1 Point 1 --> installed express
 const path = require ('path'); 
 const cors = require('cors');
+const PORT = process.env.PORT || 3000
 
 const nav= [
     {
@@ -56,6 +57,6 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000");
+app.listen(PORT,()=>{
+    console.log(`Server Ready on ${PORT}`);
 });
